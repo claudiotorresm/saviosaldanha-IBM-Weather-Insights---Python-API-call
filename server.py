@@ -8,8 +8,8 @@ import datetime
 import pytz
 import time
 #'geocode' : '{:.4f},{:.4f}'.format(-37.940878, 145.028654),
-username= "6e181e65-64df-4ccf-bc07-b994224b9f93"
-password= "5QFoh1i5TR"
+username= "                              "
+password= "                "
 url5 = "https://twcservice.mybluemix.net/api/weather/v2"
 #GET /api/weather/v2/forecast/daily/10day
 def get_weather(in_lat, in_long):
@@ -49,11 +49,11 @@ def get_weather(in_lat, in_long):
     return(todays_weather)
 
 def send_sms(phonenumber, message):
-    account = "ACcfcc86dcd2516babc046ccb35538a0f4"
-    token = "36e1f90d65cef415a7a690f5bcd2b1f9"
+    account = "                         "
+    token = "                           "
     client = TwilioRestClient(account, token)
     message = client.sms.messages.create(to=phonenumber,
-                                     from_="+17726460924",
+                                     from_="+19999999999999999",
                                      body=message)
 
 def job():
