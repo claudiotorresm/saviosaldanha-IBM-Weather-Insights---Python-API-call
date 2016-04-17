@@ -66,7 +66,7 @@ if __name__ == "__main__":
             my_time = datetime.datetime.now(pytz.timezone('Australia/Melbourne')).time()
             todays_weather = get_weather(-37.940878, 145.028654)
             if send_message == 'yes':
-                send_sms("+61491117943",todays_weather)
+                send_sms("+9999999999999",todays_weather)
             else:
                 print todays_weather    
             time.sleep(79200)
